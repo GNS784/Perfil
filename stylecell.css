@@ -77,15 +77,10 @@
         border-radius: 20px;
         transition: all 0.5s;
     }
-    #iconsConhec > div:hover{
-        width: 90px;
-        height: 60px;
-        margin: 5px;
-    }
     .paragIconsConhec{
         margin-top: 50%;
         opacity: 1;
-        font-size: 0.7em;
+        font-size: 0.6em;
         color: white;
     }
     
@@ -116,4 +111,53 @@
         margin: 0px;
     }
 
+
+    /*                                  Lina
+    */
+
+    #lina{
+        height: 300px;
+    }
+    #imgLina{
+        margin-top: 0px;
+        width: 200px;
+        height: 200px;
+    }
+    #paragImgLina{
+        font-size: 0.7em;
+    }
+    #paragLina{
+        margin-left: 15px;
+        font-size: 11px;
+    }
+
+    /*                                Final    
+    */
+
+    #final{
+        height: 200px;
+    }
+    #final > h2{
+        padding: 10px;
+        font-family: var(--text1);
+        font-size: 15px;
+        color: white;
+        text-align: left;
+        margin: 10px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    #visitaWhatss > p{
+        font-size: 12px;
+        margin: 0px 0px 10px 0px;
+    }
+    #whattsIcon{
+        width: 200px;
+        height: 30px;
+        background-size: 50px;
+    }
+    footer > p{
+        font-size: 11px;
+    }
 }

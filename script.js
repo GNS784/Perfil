@@ -14,8 +14,9 @@ if (window.innerWidth < 430){
     }
     function clicarimg(){
         imgLina.style.right = "20%";
-        imgLina.style.width = "80px"
-        imgLina.style.height = "80px"
+        imgLina.style.width = "120px"
+        imgLina.style.height = "120px"
+        imgLina.style.marginTop = "50px"
         paragLina.style.opacity = "1";
         paragImgLina.style.opacity = "0";
     }

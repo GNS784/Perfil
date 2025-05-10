@@ -42,6 +42,12 @@
         margin: 5px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.646);
     }
+    #midiasSociais > a > div:hover{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.646);
+    }
 
     /*                                   Sobre Mim
     */
@@ -77,6 +83,12 @@
         border-radius: 20px;
         transition: all 0.5s;
     }
+    #iconsConhec > div:hover{
+        width: 110px;
+        height: 70px;
+        margin: 5px;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.522);
+    }
     .paragIconsConhec{
         margin-top: 50%;
         opacity: 1;
@@ -101,6 +113,12 @@
         height: 70px;
         margin: 5px;
         border-radius: 20px;
+    }
+    #iconsProj > div:hover{
+        width: 80px;
+        height: 70px;
+        margin: 5px;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.522);
     }
     .paragProj{
         display: block;

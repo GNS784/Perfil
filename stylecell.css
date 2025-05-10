@@ -3,33 +3,117 @@
     /*                                    Valores Padrões
     */
     h2{
-        
+        font-size: 25px;
+    }
+    body{
+        max-width: 100%;
+        margin: auto;
+        display: block;
     }
 
     
     /*                                          Cabeçalho do site
     */
     header{
+        height: 300px;
         background-image: url(imagens/fundo002.png);
         background-position: top left;
-        background-size: 280%;
+        background-size: 180%;
     }
 
     #nome{
+        top: 130px;
         font-size: 1em;
     }
     #texto{
-        font-size: 1em;
+        font-size: 0.8em;
         width: 90%;
     }
 
     /*                                Mídias
     */
-    
+    #midias{
+        height: 200px;
+    }
 
     #midiasSociais > a > div{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.646);
+    }
+
+    /*                                   Sobre Mim
+    */
+
+    #sobreMim{
+        height: 300px;
+        margin: 0 auto;
+    }
+    #sobreMim > p{
+        font-size: 0.7em;
+        width: 90%;
+        margin: 0px auto;
+    } 
+
+    /*                               Conhecimento                          
+    */
+
+    #conhecimentos{
+        height: 250px;
+    }
+    #iconsConhec{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #iconsConhec > div{
+        background-repeat: no-repeat;
+        background-size: 70px;
+        background-color: black;
+        width: 110px;
+        height: 70px;
+        margin: 5px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+    #iconsConhec > div:hover{
+        width: 90px;
+        height: 60px;
         margin: 5px;
     }
+    .paragIconsConhec{
+        margin-top: 50%;
+        opacity: 1;
+        font-size: 0.7em;
+        color: white;
+    }
+    
+
+    /*                                  Projetos
+    */
+
+    #projetos{
+        height: 300px;
+    }
+    #iconsProj{
+        flex-wrap: wrap;
+    }
+    #iconsProj > div{
+        background-position: center bottom;
+        background-size: 80%;
+        width: 80px;
+        height: 70px;
+        margin: 5px;
+        border-radius: 20px;
+    }
+    .paragProj{
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        opacity: 1;
+        font-size: 0.6em;
+        margin: 0px;
+    }
+
 }

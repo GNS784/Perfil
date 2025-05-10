@@ -6,7 +6,8 @@ if (window.innerWidth < 430){
         let header = document.getElementById("cabecalho");
         let nome = document.getElementById("nome");
         let texto = document.getElementById("texto");
-        nome.style.top = "120px";
+        nome.style.top = "80px";
+        texto.style.top = "120px";
         texto.style.opacity = "1"
         texto.style.transition = "all 1.4s ease 0.5s"
         header.style.backgroundimage = "url(imagens/fundo001.jpg)"

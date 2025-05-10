@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecell.css" media="screen and (max-width: 430px)">
+</head>
+<body>
+    <!--                                       Cabeçalho do site
+    -->
+    <menu>
+        <a href="lina.com" target="_blank">Lina</a>
+    </menu>
+    <header onclick ="clicarheader()" id="cabecalho">
+        <div id="nome"><h1>Gustavo Novaes</h1></div>
+        <div id="texto"><p>"Sou apaixonado por programação. Gosto de explorar novas tecnologias e transformar ideias em soluções práticas. Para mim, programar é mais do que escrever código, é criar, aprender e evoluir constantemente."</p></div>
+    </header>
+
+    <!--                                        Corpo do site   
+    -->
+    <main>  
+        <!--                                        Mídias Sociais   
+        -->
+        <section id="midias">
+            <h2>Mídias Sociais</h2>
+            <div id="iconsMidias">
+                <div id="midiasSociais">
+                    <a href="https://www.facebook.com/profile.php?id=61553030672340" target="_blank"><div id="m1"></div></a>
+                    <a href="https://www.instagram.com/g.sampaio_7/?next=%2F" target="_blank"><div id="m2"></div></a>
+                    <a href="https://github.com/GNS784" target="_blank"><div id="m3"></div></a>
+                    <a href="https://www.linkedin.com/in/gustavo-sampaio-079221267/" target="_blank"><div id="m4"></div></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobreMim">
+            <h2>Sobre Mim</h2>
+            <p>Sou programador de sistemas com especialização em desenvolvimento Full Stack. Sou fundador e sócio da Lina, uma empresa dedicada a oferecer serviços de Design Digital, Desenvolvimento Web e Gestão de Mídias Sociais. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Anhanguera. Tenho uma grande paixão por estar atualizado com as tendências e avanços na área de programação, sempre buscando expandir meus conhecimentos e aprimorar minhas habilidades.</p>
+        </section>
+
+        <!--                            Parte do conhecimentos
+        -->
+
+        <section id="conhecimentos">
+            <h2>Conhecimentos</h2>
+            <div id="iconsConhec">
+                    <div id="i1">
+                        <p class="paragIconsConhec">Html5</p>
+                    </div>
+                    <div id="i2">
+                        <p class="paragIconsConhec">Css3</p>
+                    </div>
+                    <div id="i3">
+                        <p class="paragIconsConhec">JavaScript</p>
+                    </div>
+                    <div id="i4">
+                        <p class="paragIconsConhec">Python</p>
+                    </div>
+                    <div id="i5">
+                        <p class="paragIconsConhec">GitHub</p>
+                    </div>
+            </div>
+        </section>
+
+        <!--                                    Parte do projetos   
+        -->
+
+        <section id="projetos">
+            <h2>Meus Projetos </h2>
+            <div id="iconsProj">
+                    <div id="p1">
+                        <p class="paragProj">Android</p>
+                    </div>
+                    <div id="p2">
+                        <p class="paragProj">Social</p>
+                    </div>
+                    <div id="p3">
+                        <p class="paragProj">Cordel</p>
+                    </div>
+                    <div id="p4">
+                        <p class="paragProj">Login</p> 
+                    </div>
+            </div>
+        </section>
+
+<!--                                Parte da empresa Lina 
+-->
+
+        <section id="lina" onclick="clicarimg()">
+            <h2>Lina</h2>
+                <div id="imgLina"><p id="paragImgLina">Clique para saber mais</p></div>
+                <p id="paragLina">Ficou curioso para saber mais sobre a nossa empresa? Estamos prontos para surpreender você com a variedade de serviços que oferecemos, desde design digital até soluções completas para web e redes sociais. Explore as possibilidades e veja como podemos transformar suas ideias em realidade! Clique na imagem ao lado para saber mais detalhes e descubra como podemos ajudar você a alcançar seus objetivos.</p>
+
+        </section>
+
+        <section id="final">
+            <h2>Muito Obrigado <br> Pela Visita!</h2>
+            <div id="visitaWhatss">
+                <h3>Mas não precisa ficar Assim</h3>
+                <p>Me chame pelo WhatsApp</p>
+                <div id="whattsIcon"></div>
+            </div>
+        </section>
+        <footer>
+            <p>Site feito por Gustavo Sampaio</p>
+            <p id="direitos">©Todos os direitos resevados</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

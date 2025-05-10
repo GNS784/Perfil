@@ -1,0 +1,394 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'ruda';
+    src: url(fonts/ruda/Ruda-Regular.ttf);
+}
+@font-face {
+    font-family: 'sanchez';
+    src: url(fonts/Sanchez/Sanchez-Regular.ttf);
+}
+:root {
+    --cor1: #000000;
+    --cor2: #FFFFFF;
+    --cor3: #D6958F;
+    --cor4: #00FF00;
+    --cor5: #0000FF;
+    --cor6: #FFFF00;
+    --cor7: #FF00FF;
+    --cor8: #00FFFF;
+    --text1: 'ruda';
+    --text2: 'sanchez';
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*                                      Valores Padrões                            */  
+h2{
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 2em;
+    margin: 40px;
+    font-family: var(--text1);
+}
+body{
+    max-width: 1360px;
+    margin: auto;
+    display: block;
+}
+/*                                         Cabeçalho do site                            
+*/
+menu{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.342);
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);
+}
+menu > a{
+    text-decoration: none;
+    font-family: var(--text1);
+    font-size: 1em;
+    color: var(--cor2);
+    text-align: center;
+    margin: 0 10px;
+}
+menu:hover{
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.445);
+}
+header{
+    background-image: url(imagens/fundo001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    height: 500px;
+}
+#texto{
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    opacity: 0;
+    width: 40%;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: var(--text1);
+}
+#nome{
+    font-family: var(--text2);
+    font-weight: normal;
+    color: white;
+    font-size: 2em;
+    top: 200px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    transition: all 1.4s ease 0s;
+}
+header:hover #texto {
+    opacity: 1;
+    transition: all 1.4s ease 0.5s;
+}
+header:hover #nome {
+    top: 80px;
+    opacity: 1;
+}
+/*                                        Parte das Mídias Sociais                            */
+#midias{
+    height: 300px;
+}
+#midiasSociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#midiasSociais > a > div{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all 0.5s;
+}
+#midiasSociais > a > div:hover{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.522);
+}
+#m1{
+    background-image: url(imagens/logo-facebook.png);
+    background-size: cover;
+}
+#m2{
+    background-image: url(imagens/logo-instagram.png);
+    background-size: cover;
+}
+#m3{
+    background-image: url(imagens/logo-github.png);
+    background-size: cover;
+}
+#m4{
+    background-image: url(imagens/logo-linkedin.png);
+    background-size: cover;
+}
+/*                                       Parte sobre mim                             */
+#sobreMim{
+    background-color: black;
+    height: 400px;
+    padding: 20px 10px;
+}
+#sobreMim > h2{
+    color: white;
+}
+#sobreMim > p{
+    color: white;
+    width: 50%;
+    text-align:justify;
+    margin: 40px auto;
+    font-family: var(--text1);
+    font-size:18px;
+}
+/*                                                              Parte dos conhecimentos 
+*/
+#conhecimentos{
+    height: 300px;
+}
+#iconsConhec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#iconsConhec > div{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all 0.5s;
+}
+#iconsConhec > div:hover{
+    width: 150px;
+    height: 120px;
+    margin: 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.522);
+}
+.paragIconsConhec{
+    opacity: 0;
+    color: white;
+    text-align: center;
+    margin-top: 60%;
+    font-family: var(--text1);
+}
+#iconsConhec > div:hover .paragIconsConhec{
+    opacity: 1;
+    transition: all 0.5s;
+}
+#i1{
+    background-image: url(imagens/logo-html5.png);
+    background-size: 100px;
+    background-position: center;
+}
+#i2{
+    background-image: url(imagens/logo-css3.png);
+    background-size: 100px;
+    background-position: center;
+}
+#i3{
+    background-image: url(imagens/logo-javascript.png);
+    background-size: 100px;
+    background-position: center;
+}
+#i4{
+    background-image: url(imagens/logo-python.png);
+    background-size: 100px;
+    background-position: center;
+}
+#i5{
+    background-image: url(imagens/logo-github.png);
+    background-size: 100px;
+    background-position: center;
+}
+/*                                                   Parte dos projetos 
+*/
+#projetos{
+    background-color: black;
+    height: 400px;
+}
+#projetos > h2{
+    padding-top: 50px;
+    color: white;
+}
+#iconsProj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#iconsProj > div{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all 0.5s;
+}
+#iconsProj > div:hover{
+    width: 150px;
+    height: 120px;
+    margin: 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.707);
+}
+.paragProj{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+    opacity: 0;
+    color: black;
+    text-align: left;
+    font-family: var(--text1);
+    transition: all 0.5s;
+}
+#iconsProj > div:hover .paragProj{
+    opacity: 1;
+}
+#p1{
+    background-image: url(imagens/logo-android.png);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+#p2{
+    background-image: url(imagens/logo-social.png);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}       
+#p3{
+    background-image: url(imagens/logo-livro.png);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#p4{
+    background-image: url(imagens/logo-pessoa.png);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#p1, #p2, #p3, #p4:hover{
+    background-position: center right;
+}
+/*                                                        Parte da empresa Lina
+*/
+#lina{
+    height: 500px;
+}
+#imgLina{
+    background-color: lightblue;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0%);
+    transition: all 1s;
+    border-radius: 20px;
+    background-image: url(imagens/logo-lina.png);
+    background-size: cover;
+    margin-top: 60px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.308);
+}
+#paragImgLina{
+    text-align: center;
+    margin-top: 85%;
+    font-family: var(--text1);
+    color: var(--cor1);
+}
+#paragLina{
+    opacity: 0;
+    font-size: 1.5em;
+    font-family: var(--text1);
+    text-align: justify;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 60px;
+    transition: all 1s ease 0.2s;
+}
+
+/*                                     Parte Final
+*/
+
+#final{
+    height: 400px;
+    background-color: black;
+}
+#final > h2{
+    padding: 40px;
+    font-family: var(--text1);
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+#visitaWhatss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 320px;
+    margin: auto;
+}
+h3{
+    font-family: var(--text2);
+    font-size: 20px;
+}
+#visitaWhatss > p{
+    font-family: var(--text2);
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+#whattsIcon{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-image: url(imagens/logo-whatsapp.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+#visitaWhatss:hover #whattsIcon{
+    width: 300px;
+    height: 50px;
+}
+
+
+footer{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer > p{
+    font-family: var(--text1);
+    color: white;
+}

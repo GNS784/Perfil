@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@media screen and (max-width: 430px) {
+    /*                                    Valores Padrões
+    */
+    h2{
+        
+    }
+
+    
+    /*                                          Cabeçalho do site
+    */
+    header{
+        background-image: url(imagens/fundo002.png);
+        background-position: top left;
+        background-size: 280%;
+    }
+
+    #nome{
+        font-size: 1em;
+    }
+    #texto{
+        font-size: 1em;
+        width: 90%;
+    }
+
+    /*                                Mídias
+    */
+    
+
+    #midiasSociais > a > div{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}

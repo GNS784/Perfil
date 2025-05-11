@@ -250,7 +250,7 @@ header:hover #nome {
     height: 120px;
     margin: 0px;
     border-radius: 20px;
-    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.707);
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.186);
 }
 .paragProj{
     display: flex;

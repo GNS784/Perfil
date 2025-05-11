@@ -6,8 +6,8 @@ if (window.innerWidth < 430){
         let header = document.getElementById("cabecalho");
         let nome = document.getElementById("nome");
         let texto = document.getElementById("texto");
-        nome.style.top = "80px";
-        texto.style.top = "120px";
+        nome.style.top = "50px";
+        texto.style.top = "80px";
         texto.style.opacity = "1"
         texto.style.transition = "all 1.4s ease 0.5s"
         header.style.backgroundimage = "url(imagens/fundo001.jpg)"
@@ -16,7 +16,7 @@ if (window.innerWidth < 430){
         imgLina.style.right = "20%";
         imgLina.style.width = "120px"
         imgLina.style.height = "120px"
-        imgLina.style.marginTop = "50px"
+        imgLina.style.marginTop = "60px"
         paragLina.style.opacity = "1";
         paragImgLina.style.opacity = "0";
     }

@@ -1,0 +1,421 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ruda:wght@400..900&family=Sanchez:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #242424;
+    height: 300vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url(imagens/banner/fundoprincipal.png);
+    background-position: bottom -40px right;
+    background-repeat: no-repeat;
+    background-color: #080705;
+    height: 600px;
+    box-shadow: 0px 1px 20px rgba(255, 255, 255, 0.13);
+}
+nav{
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    z-index: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    font-size: 16px;
+    font-family:'ruda';
+    list-style: none;
+    color: white;
+}
+nav > div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.reta{
+    width: 0px;
+    height: 1px;
+    background-color: white;
+    transition: 0.8s;
+}
+nav > div:hover .reta{
+    width: 100%;
+}
+#boxNome{
+    position: relative;
+    z-index: 0;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 60px;
+}
+h1{
+    color: white;
+    font-size: 100px;
+    font-family: 'ruda';
+}
+#boxNome > p{
+    font-family: 'ruda';
+    font-size: 40px;
+    color: white;
+}
+#close{
+    display: none;
+}
+#menu{
+    display: none;
+}
+
+/*                                     Saiba mais
+*/
+#introducao{
+    padding-top: 100px;
+}
+h3{
+    color: white;
+    font-family: 'ruda';
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 25px;
+    font-weight: normal;
+}
+article{
+    width: 80%;
+    margin: auto;
+}
+article > p{
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'ruda';
+    color: rgb(150, 150, 150);
+}
+
+/*                                     Mídias Sociais
+*/
+
+#midias{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#boxMidias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+.midia{
+    width: 100px;
+    height: 100px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.267);
+}
+.midia > a > img{
+    width: 50px;
+}
+.midia:hover{
+    background-color: #242424;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.267);
+    transition: 0.3s;
+}
+.midia:hover > img{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/*                                                                 Competências   
+*/
+#conhecimentos{
+    height: auto;
+    margin-bottom: 7%;
+}
+#conhecimentos > section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.boxcompetencias{
+    position: relative;
+    width: 250px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+}
+.boxcompetencias:hover{
+    transform: scale(1.1);
+
+}
+.nomecompetencias{
+    position: absolute;
+    top: 110px;
+    right: -85px;
+    width: 200px;
+    transform: rotate(-90deg);
+    text-align: right;
+    font-size: 20px;
+    font-family: "ruda";
+    color: white;
+}
+.titulo{
+    font-weight: normal;
+    font-family: 'ruda';
+    font-size: 15px;
+    color: white;
+}
+.artigo{
+    font-family: 'ruda';
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.322);
+}
+.boxcompetencias > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*                                          Projetos
+*/
+
+
+
+#projetos{
+    width: 100%;
+    height: 100vh;
+}
+#boxpr{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+#boxprojetos{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.projeto{
+    width: 100px;
+    height: 100px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+
+}
+.projeto:hover{
+    transform: scale(0.9);
+    background-color: rgba(105, 105, 105, 0.377);
+}
+#iframe{
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(177, 177, 177, 0.075);
+}
+iframe{
+    scrollbar-width: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/*                                      Esperiência
+*/
+
+
+#experiencia{
+    margin-top: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#experiencia > article{
+    width: 60%;
+    margin: 20px auto;
+}
+
+/*                                          Nevio Agência de Desings
+*/
+#empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    gap: 20px;
+}
+#nevio{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+#nevio > article{
+    width: 500px;
+    margin: 0px;
+    padding: 0px;
+}
+#nevio > picture > p{
+    width: 200px;
+    padding: 10px;
+    margin: 5px auto;
+    font-family: 'ruda';
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#nevio > picture > p:hover{
+    transform: scale(1.1);
+    background-color: #1a1a1a44;
+}
+#imgnevio{
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    transition: opacity 0.4s;
+}
+
+
+/*                                      Final (Footer)
+*/
+
+footer{
+    height: auto;
+    display: flex;
+    padding-bottom: 50px;
+}
+#agradecimentos{
+    width: 50%;
+    height: 100%;
+}
+h5{
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+    font-size: 35px;
+    color: white;
+    font-family: 'ruda';
+}
+#agradecimentos > article{
+    padding: 5px 0px;
+    width: 70%;
+    height: auto;
+}
+#sobremais{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#titulofooter{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'ruda';
+    color: white;
+    text-align: center;
+}
+#sobremais > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#boxsobre1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#boxsobre1 > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#boxsobre1 > div > img{
+    width: 30px;
+}
+#boxsobre1 > div > a{
+    font-size: 20px;
+    font-family: 'ruda';
+    color: #ffffff4d;
+    text-decoration: none;
+}
+
+#boxsobre2{
+    width: 40%;
+    height: 100%;
+    font-family: 'ruda';
+    color: white;
+    text-align: right;
+}
+#titulosobre2{
+    font-size: 20px;
+}
+#artigosobre2{
+    width: 100%;
+    font-size: 15px;
+    color: #ffffff4d;
+}
+#rodape{
+    font-size: 12px;
+    color: white;
+    font-family: 'ruda';
+    text-align: center;
+}

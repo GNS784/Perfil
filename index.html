@@ -1,39 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background: linear-gradient(135deg, #000000, #434343);
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-        }
-        h1 {
-            cursor: pointer;
-            font-size: 3em;
-            text-align: center;
-        }
-        p {
-            cursor: pointer;
-            text-align: center;
-            font-size: 1.2em;
-        }
-    </style>
+    <title>Perfil-Profissional</title>
+    <link rel="shortcut icon" href="imagens/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="smartphone.css">
 </head>
 <body>
-    <h1>Em manutenção</h1>
-    <p>Breve com novas novidades</p>
+    <header>
+        <picture>
+            <img id="menu" src="imagens/icons/menu_branco.png" alt="" onclick="abrirMenu()">
+        </picture>
+        <nav>
+            <img id="close" src="imagens/icons/close_30dp_EDF6F5_FILL0_wght400_GRAD0_opsz24.png" alt="" onclick="fecharMenu()">  
+            <div><a href="#"><li>Inicio</li></a><div class="reta"></div></div>
+            <div><a href="#midias"><li>Midias</li></a><div class="reta"></div></div>
+            <div><a href="#conhecimentos"><li>Conhecimentos</li></a><div class="reta"></div></div>
+            <div><a href="#projetos"><li>Projetos</li></a><div class="reta"></div></div>
+            <div><a href="#experiencia"><li>Experiências</li></a><div class="reta"></div></div>
+        </nav>
+        <div id="boxNome">
+            <h1>Gustavo</h1>
+            <p>Novaes Sampaio</p>
+        </div>
+    </header>
+    <main>
+        <section id="introducao">
+            <h3>Negócio é Visão. Código é Meio</h3>
+            <article>
+                <p>
+                    Mais do que um programador em formação com foco em desenvolvimento Full Stack, sou um construtor de ideias, movido por curiosidade e pela vontade de ir além do esperado. Como CEO e sócio da Nevio, agência de design que fundei com propósito e ambição, mergulho todos os dias no universo do Design Digital, Desenvolvimento Web e Gestão de Mídias Sociais, buscando sempre entregar soluções que unam estética, funcionalidade e resultado. <br>
+                    Minha visão é clara: não basta fazer o básico — é preciso criar com intenção, com estratégia e com coragem. A Nevio nasceu dessa mentalidade, e é com ela que enfrento cada novo projeto: como uma oportunidade de criar algo único, que se destaque e realmente resolva um problema. <br>
+                    Mesmo em formação na área de tecnologia, meu compromisso com a prática é total. Estudo, exploro, aplico e aprendo. Acompanho tendências, testo ferramentas e busco estar sempre um passo à frente. Programar, para mim, não é apenas escrever código — é transformar desafios em soluções inteligentes, reais e escaláveis. <br>
+                    Não me posiciono apenas como um profissional técnico. Me vejo como alguém que constrói, conecta e transforma. Alguém que está só começando, mas que já sabe onde quer chegar — e não tem medo de fazer diferente para chegar lá.
+
+                </p>
+            </article>
+        </section>
+        <section id="midias">
+            <div id="boxMidias">
+                <div class="midia"><a href="https://www.instagram.com/g.sampaio_7/profilecard/?igsh=MTBwOGwzOXpkOTd2YQ=="><img src="imagens/icons/istagram.png" alt=""></a></div>
+                <div class="midia"><a href="https://wa.me/5573998212205?text=Olá!%20Gostaria%20de%20conversar%20com%20você.%20Poderia%20me%20atender%20quando%20tiver%20um%20momento%20disponível%3F"><img src="imagens/icons/whatsapp.png" alt=""></a></div>
+                <div class="midia"><a href="https://github.com/GNS784"><img src="imagens/icons/github.png" alt=""></a></div>
+                <div class="midia"><a href="https://www.linkedin.com/in/gustavosampaio7/"><img src="imagens/icons/linkedin.png" alt=""></a></div>
+            </div>
+        </section>
+        <section id="conhecimentos">
+            <h3>Competências Técnicas</h3>
+            <section>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+                <div class="boxcompetencias">
+                    <img src="imagens/icons/HTML5.png" alt="">
+                    <p class="nomecompetencias">HTML5</p>
+                    <div>
+                        <div>
+                            <p class="titulo">Nível de conhecimento:</p>
+                            <p class="artigo">Intermediario</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Formação:</p>
+                            <p class="artigo">Cursos básicos concluídos</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Aprimoramento:</p>
+                            <p class="artigo">Em processo de especialização profissional</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Foco atual:</p>
+                            <p class="artigo">Práticas avançadas e técnicas modernas de estruturação</p>
+                        </div>,
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="projetos">
+            <h3>Desenvolvimento em Ação</h3>
+            <div id="boxpr">
+                <div id="boxprojetos">
+                    <a href="https://gns784.github.io/projeto-social/" target="linkiframe">
+                        <div class="projeto" id="primeiropr" style="background-image: url(imagens/icons/social.png);"></div>
+                    </a>
+                    <a href="https://gns784.github.io/projeto-cordel/" target="linkiframe">
+                        <div class="projeto" id="segundopr" style="background-image: url(imagens/icons/cordel.png);"></div>
+                    </a>
+                    <a href="https://gns784.github.io/projeto-android/" target="linkiframe">
+                        <div class="projeto" id="terceiropr" style="background-image: url(imagens/icons/android.png);"></div>
+                    </a>
+                    <a href="https://gns784.github.io/projeto-login/" target="linkiframe">
+                        <div class="projeto" id="quartopr" style="background-image: url(imagens/icons/login.png);"></div>
+                    </a>
+                </div>
+                <div id="iframe"><iframe name="linkiframe" src="https://gns784.github.io/projeto-cordel/" frameborder="0" ><p>Clique ao lado</p></iframe></div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h3>
+                Experiência Profissional
+            </h3>
+            <article>
+                <p>
+                    Responsabilidade, disciplina e comprometimento não são apenas palavras no meu vocabulário — são práticas que aplico todos os dias.
+                    Tudo o que construí até aqui foi com base em iniciativa, coragem para aprender sozinho e vontade real de evoluir.
+                    Entendi desde cedo que resultado vem de atitude, e é com essa mentalidade que venho me preparando: estudando, criando, testando, errando e acertando — até fazer bem feito.
+                    Minha jornada na tecnologia é movida por inquietação e propósito. Não espero por chances: eu crio caminhos. Tenho visão de futuro, consistência no que faço e sede por entregar algo que realmente faça diferença.
+                    Se tem uma coisa que me define, é a vontade de transformar ideias em impacto real.
+
+                </p>
+            </article>
+        </section>
+        <section id="empresa">
+            <h3>Transformando Presenças Digitais</h3>
+            <section id="nevio">
+                <picture>
+                    <img id="imgnevio" src="imagens/neviodesign/Nevio.logo.jpg" alt="" onmouseenter="entrarLogo()" onmouseout="sairLogo()">
+                    <p>Site em andamento</p>
+                </picture>
+                <article>
+                    <p>
+                        Na Nevio, acreditamos que uma presença digital forte vai muito além de um bom visual — ela precisa comunicar, envolver e entregar resultados. Somos uma agência de design focada em transformar marcas por meio de soluções criativas, estratégias inteligentes e desenvolvimento personalizado.
+                        Atuamos com design digital, desenvolvimento web e gestão de mídias sociais, unindo estética, funcionalidade e performance em cada projeto. Nosso objetivo é ajudar empresas a se destacarem no ambiente online com identidade, profissionalismo e originalidade.
+                        Cada detalhe importa, e na Nevio, cada projeto é tratado como único. Transformamos ideias em experiências digitais impactantes.
+                    </p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div id="agradecimentos">
+            <h5>
+                E isso <br> É só o começo
+            </h5>
+            <article>
+                <p>
+                    Fico muito feliz por você ter dedicado um tempo para conhecer meu trabalho e minha trajetória. Cada detalhe aqui foi pensado com dedicação e propósito. Se algo te chamou atenção, ou se você acredita que podemos construir algo juntos, será um prazer conversar. Vamos transformar ideias em realidade?
+                </p>
+            </article>
+        </div>
+        <div id="sobremais">
+            <p id="titulofooter">Se quiser trocar uma ideia <br>
+            ou iniciar um projeto, é só me chamar.</p>
+            <div>
+                <section id="boxsobre1">
+                    <div>
+                        <img src="imagens/icons/whatsapp.png" alt="">
+                        <a href="https://wa.me/5573998212205?text=Olá!%20Gostaria%20de%20conversar%20com%20você.%20Poderia%20me%20atender%20quando%20tiver%20um%20momento%20disponível%3F">(73) 9 9821-2205</a>
+                    </div>
+                    <div>
+                        <img src="imagens/icons/istagram.png" alt="">
+                        <a href="https://www.instagram.com/g.sampaio_7/profilecard/?igsh=MTBwOGwzOXpkOTd2YQ==">g.sampaio_7</a>
+                    </div>
+                    <div>
+                        <img src="imagens/icons/email.png" alt="">
+                        <a href="">gn.sampaio00@gmail.com</a>
+                    </div>
+                </section>
+                <section id="boxsobre2">
+                    <p id="titulosobre2">Encontrou algo errado?</p>
+                    <p id="artigosobre2">Reportar diretamente <br> pelo whatsapp</p>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <p id="rodape">© 2025 Gustavo Novaes Sampaio. Todos os direitos reservados.</p>
+    <script src="script.js"></script>
 </body>
 </html>

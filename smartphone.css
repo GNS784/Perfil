@@ -1,0 +1,202 @@
+@media (max-width: 600px){
+    header{
+        background-size: 800px;
+        height: 400px;
+    }
+    nav{
+        transition: 0.5s;
+        width: 220px;
+        height: 300px;
+        background-color: rgb(54, 54, 59);
+        top: 0px;
+        left: -100%;
+        border-radius: 0px 20px 20px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    #boxNome{
+        padding-left: 5%;
+        line-height: 25px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    #boxNome > p{
+        font-size: 15px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 30px;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    /*                           Saiba mais
+    */
+    #introducao{
+        padding-top: 20px;
+    }
+    article{
+        width: 90%;
+    }
+    h3{
+        font-size: 18px;
+    }
+    article > p{
+        font-size: 12px;
+    }
+    /*                                      Mídias Sociais   
+    */
+    #midias {
+        height: 220px;
+        justify-content: flex-end;
+    }
+    #boxMidias{
+        gap: 20px;
+        height: 150px;
+        flex-wrap: wrap;
+    }
+    .midia{
+        width: 60px;
+        height: 60px;
+    }
+    .midia > a > img{
+        width: 30px;
+    }
+    /*                                                  Conhecimentos          
+    */
+
+    #conhecimentos{
+        height: auto;
+    }
+    .boxcompetencias{
+        width: 140px;
+        height: 250px;
+    }
+    .boxcompetencias > div{
+        height: 60%;
+    }
+    .boxcompetencias > img{
+        width: 50px;
+    }
+    .nomecompetencias{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .artigo{
+        font-size: 8px;
+    }
+    #boxprojetos{
+        gap: 10px;
+        height: 100px;
+        margin: 0px;
+        padding: 0px;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    #boxpr{
+        flex-direction: column;
+    }
+    .projeto{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px ;
+        background-size: 50%;
+    }
+    .projeto:hover{
+        transform: scale(1);
+        background-color: rgba(105, 105, 105, 0.377);
+    }
+    #iframe{
+        width: 90%;
+        height: 400px;
+        background-color: white;
+    }
+    #experiencia{
+        margin-top: 0px;
+        height: auto;
+    }
+    #experiencia > article{
+        width: 90%;
+    }
+
+    /*          Empresa Nevio
+    */
+
+    #empresa{
+        height: 70vh;
+    }
+    #empresa > h3{
+        padding: 20px;
+    }
+    #nevio{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #nevio > article{
+        width: 90vw;
+    }
+    #nevio > picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #nevio > picture > p{
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px auto;
+    }
+    #nevio > picture > p:hover{
+        transform: scale(1.1);
+        background-color: #1a1a1a44;
+    }
+    #imgnevio{
+        width: 150px;
+    }
+
+    /*                                  Final (Footer)
+    */
+
+    footer{
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    h5{
+        width: 90%;
+    }
+    #agradecimentos{
+        width: 100%;
+    }
+    #sobremais{
+        width: 100%;
+    }
+    #agradecimentos > article {
+        width: 90%;
+    }
+    #titulofooter{
+        font-size: 15px;
+    }
+    #boxsobre1 > div > img {
+        width: 20px;
+    }
+    #boxsobre1 > div > a{
+        font-size: 12px;
+    }
+    #titulosobre2{
+        font-size: 15px;
+    }
+    #artigosobre2{
+        font-size: 10px;
+    }
+}

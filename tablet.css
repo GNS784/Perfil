@@ -1,0 +1,37 @@
+@media (min-width: 601px) and (max-width: 834px){
+    #boxNome{
+        line-height: 45px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    #midias {
+        height: 400px;
+    }
+    #projetos {
+        height: 600px;
+    }
+    #boxNome > p{
+        font-size: 30px;
+    }
+    #experiencia {
+        margin-top: 100px;
+    }
+    #empresa {
+        height: 700px;
+    }
+    #nevio{
+        padding: 20px;
+        gap: 40px;
+    }
+    #imgnevio{
+        width: 300px;
+    }
+    #agradecimentos > article > p{
+        font-size: 15px;
+    }
+    #boxsobre1 > div > a{
+        font-size: 15px;
+    }
+    
+}

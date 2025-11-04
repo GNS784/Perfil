@@ -207,6 +207,12 @@ article > p{
     flex-direction: column;
     gap: 10px;
 }
+.boxcompetencias > img{
+    transition: 0.5s;
+}
+.boxcompetencias:hover > img{
+    transform: scale(1.1);
+}
 
 /*                                          Projetos
 */
